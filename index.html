@@ -1,11 +1,280 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="AYER - musician website">
+    <meta name="author" content="Jason Desiderio">
 	<title>AYER</title>
 	<script src="js/lib/modernizr.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.min.css" />
 </head>
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-social" id="navbar-fixed">
+                <div id="navbar-fixed-bottom">
+                    <ul class="list-inline banner-social-buttons" id="nav-li-fixed-social">
+                        <li>
+                            <a href="http://bit.do/ayerface" class="" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://bit.do/ayertwitter" class="" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/officialayer" class="" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://bit.do/ayermusic" class="" target="_blank"><i class="fa fa-apple fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://bit.do/ayerify" class="" target="_blank"><i class="fa fa-spotify fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://soundcloud.com/officialayer" class="" target="_blank"><i class="fa fa-soundcloud fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.youtube.com/user/officialAYER" class="" target="_blank"><i class="fa fa-youtube fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  AYER
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#social">Social</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#music">Music</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#live">Live</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#mailing_list">Mailing List</a>
+                    </li>
+                    <!--<li>
+                        <a class="page-scroll" href="#store">Store</a>
+                    </li>-->
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2" id="featuredContent">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/gznStj6FGXk?VQ=HD720" frameborder="0" allowfullscreen id="featuredVideo"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- News Section -->
+    <section id="social" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Social</h2>
+                <p>
+                    <ul class="list-inline">
+                            <li>
+                                <a class="twitter-timeline" width="600"
+  height="380" href="https://twitter.com/AYERofficial" data-widget-id="564585835224662016">Tweets by @AYERofficial</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                            </li>
+                        </ul>
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Music</h2>
+                    <p>
+                        <ul class="list-inline" id="music-player-list">
+                            <li>
+                                <iframe class="spotify-playlist" src="https://embed.spotify.com/?uri=spotify:user:drivenmebefore:playlist:2KN6FpF87dO3sxPytgXwxb" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                            </li>
+                            <li>
+                                <iframe class="soundcloud-playlist" width="300" height="380" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/63885680&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                            </li>
+                        </ul>
+                    </p>
+                    <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="http://bit.do/ayermusic" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-apple fa-fw"></i> <span class="network-name">iTunes</span></a>
+                    </li>
+                    <li>
+                        <a href="http://bit.do/ayerify" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
+                    </li>
+                    <li>
+                        <a href="https://soundcloud.com/officialayer" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">Soundcloud</span></a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com/user/officialAYER" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube</span></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Section -->
+    <section id="live" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Live</h2>
+
+                    <div role="tabpanel">
+
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-pills" role="tablist" id="liveTabs">
+                        <li role="presentation" class="active" id="songkickLi"><a href="#songkick" aria-controls="songkick" role="tab" data-toggle="tab" class="btn btn-default btn-lg">Songkick</a></li>
+                        <li role="presentation" id="bandsintownLi"><a href="#bandsintown" aria-controls="bandsintown" role="tab" data-toggle="tab" class="btn btn-default btn-lg">Bandsintown</a></li>
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="songkick">
+                            <p>
+                                <a href="http://www.songkick.com/artists/891423" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent">&nbsp;</a>
+                                <script src="//widget.songkick.com/widget.js"></script>
+                            </p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="bandsintown">
+                            <p>
+                                <script type='text/javascript' src='http://www.bandsintown.com/javascripts/bit_widget.js'></script>
+                                <a href='http://www.bandsintown.com' class='bit-widget-initializer' data-artist='ayer'>Bandsintown</a>
+                            </p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Mailing List Section -->
+    <section id="mailing_list" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Mailing List</h2>
+                <p class="mailchimp">
+                    <form action="//ayer.us10.list-manage.com/subscribe/post?u=d0b9f14f4ad170f1f4be0f774&amp;id=944f9e684b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <input type="email" value="" name="EMAIL" class="form-control input-lg" placeholder="Enter email" id="mce-EMAIL">
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_d0b9f14f4ad170f1f4be0f774_944f9e684b" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-lg">
+                    </form>
+                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--
+     Store Section
+    <section id="store" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Store</h2>
+                <p>Space Filler</p>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
+                <p>...the non-human kind.</p>
+                <p>
+                    <ul class="list-inline" id="contact-list">
+                        <li>
+                            AYER:<br />
+                            <a href="mailto:mgmt@ayermusic.com">mgmt@ayermusic.com</a><br /><br /><br />
+                        </li>
+                        <li>
+                            <!--Booking:<br />
+                            <a href="mailto:joefucigna@theagencygroup.com">joefucigna@theagencygroup.com</a><br /><br />-->
+                            Management:<br />
+                            <a href="mailto:alex@onetenartists.com">alex@onetenartists.com</a><br /><br /><br />
+                        </li>
+                    </ul>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="http://bit.do/ayerface" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="http://bit.do/ayertwitter" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com/officialayer" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                    </li>
+                </ul>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="http://bit.do/ayermusic" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-apple fa-fw"></i> <span class="network-name">iTunes</span></a>
+                    </li>
+                    <li>
+                        <a href="http://bit.do/ayerify" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
+                    </li>
+                    <li>
+                        <a href="https://soundcloud.com/officialayer" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">Soundcloud</span></a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com/user/officialAYER" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section
+    <div id="map"></div>-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; AYER 2015</p>
+        </div>
+        <br /><br /><br />
+    </footer>
 Hi Danny, this is merely a test.
 <!-- <script src="js/lib/require.js" data-main="js/main" /></script> -->
 <script src="js/build/app.min.js"></script>
