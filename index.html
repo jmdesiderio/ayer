@@ -43,9 +43,6 @@
 	    <div class="container">
 	    	<nav class="page-wrap" role="navigation">
 	            <div class="site-title">
-	                <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse">
-	                    <i class="fa fa-bars"></i>
-	                </button>
 	                <a href="#js-home-page">
 	                    <i class="fa fa-play-circle"></i>  AYER
 	                </a>
@@ -86,7 +83,7 @@
 	    <section class="splash-section">
 	        <div class="container">
 	            <div id="featured-content" class="content-section">
-	                <iframe width="640" height="360" src="https://www.youtube.com/embed/gznStj6FGXk?VQ=HD720" frameborder="0" allowfullscreen id="featuredVideo"></iframe>
+	                <iframe width="640" height="360" src="https://www.youtube.com/embed/gznStj6FGXk?VQ=HD720" frameborder="0" allowfullscreen id="featured-video"></iframe>
 	            </div>
 	        </div>
 	    </section>
@@ -113,7 +110,7 @@
 	                <div class="content-section">
 	                    <h2>Music</h2>
 	                    <p>
-	                        <ul>
+	                        <ul class="list-inline">
 	                            <li>
 	                                <iframe class="spotify-playlist" src="https://embed.spotify.com/?uri=spotify:user:drivenmebefore:playlist:2KN6FpF87dO3sxPytgXwxb" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 	                            </li>
@@ -122,20 +119,20 @@
 	                            </li>
 	                        </ul>
 	                    </p>
-	                    <ul>
-	                    <li>
-	                        <a href="http://bit.do/ayermusic" target="_blank" class="button"><i class="fa fa-apple fa-fw"></i> <span class="network-name">iTunes</span></a>
-	                    </li>
-	                    <li>
-	                        <a href="http://bit.do/ayerify" target="_blank" class="button"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
-	                    </li>
-	                    <li>
-	                        <a href="https://soundcloud.com/officialayer" target="_blank" class="button"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">Soundcloud</span></a>
-	                    </li>
-	                    <li>
-	                        <a href="http://www.youtube.com/user/officialAYER" target="_blank" class="button"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube</span></a>
-	                    </li>
-	                </ul>
+		                <ul class="list-inline">
+		                    <li>
+		                        <a href="http://bit.do/ayermusic" target="_blank" class="button"><i class="fa fa-apple fa-fw"></i> <span class="network-name">iTunes</span></a>
+		                    </li>
+		                    <li>
+		                        <a href="http://bit.do/ayerify" target="_blank" class="button"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
+		                    </li>
+		                    <li>
+		                        <a href="https://soundcloud.com/officialayer" target="_blank" class="button"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">Soundcloud</span></a>
+		                    </li>
+		                    <li>
+		                        <a href="http://www.youtube.com/user/officialAYER" target="_blank" class="button"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube</span></a>
+		                    </li>
+		                </ul>
 	                </div>
 	            </div>
 	        </div>
@@ -150,7 +147,7 @@
 	                    <div role="tabpanel">
 
 	                      <!-- Nav tabs -->
-	                      <ul class="nav nav-pills" role="tablist" id="liveTabs">
+	                      <ul class="list-inline" role="tablist">
 	                        <li role="presentation" class="active" id="songkickLi"><a href="#songkick" aria-controls="songkick" role="tab" data-toggle="tab" class="button">Songkick</a></li>
 	                        <li role="presentation" id="bandsintownLi"><a href="#bandsintown" aria-controls="bandsintown" role="tab" data-toggle="tab" class="button">Bandsintown</a></li>
 	                      </ul>
@@ -187,7 +184,7 @@
 	                    <form action="//ayer.us10.list-manage.com/subscribe/post?u=d0b9f14f4ad170f1f4be0f774&amp;id=944f9e684b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	                        <input type="email" value="" name="EMAIL" class="form-control input-lg" placeholder="Enter email" id="mce-EMAIL">
 	                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_d0b9f14f4ad170f1f4be0f774_944f9e684b" tabindex="-1" value=""></div>
-	                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-lg">
+	                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 	                    </form>
 	                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 	                    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
@@ -203,7 +200,7 @@
 	                <h2>Contact</h2>
 	                <p>...the non-human kind.</p>
 	                <p>
-	                    <ul>
+	                    <ul class="list-inline">
 	                        <li>
 	                            AYER:<br />
 	                            <a href="mailto:mgmt@ayermusic.com">mgmt@ayermusic.com</a>
@@ -216,7 +213,7 @@
 	                        </li>
 	                    </ul>
 	                </p>
-	                <ul>
+	                <ul class="list-inline">
 	                    <li>
 	                        <a href="http://bit.do/ayerface" target="_blank" class="button"><i class="fa fa-facebook fa-fw"></i> <span>Facebook</span></a>
 	                    </li>
@@ -227,7 +224,7 @@
 	                        <a href="http://instagram.com/officialayer" target="_blank" class="button"><i class="fa fa-instagram fa-fw"></i> <span>Instagram</span></a>
 	                    </li>
 	                </ul>
-	                <ul>
+	                <ul class="list-inline">
 	                    <li>
 	                        <a href="http://bit.do/ayermusic" target="_blank" class="button"><i class="fa fa-apple fa-fw"></i> <span>iTunes</span></a>
 	                    </li>

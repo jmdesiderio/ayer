@@ -497,23 +497,29 @@ small {
 .main-header {
   height: 2.5rem;
   width: 100%;
-  background-color: #247da8;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
   color: #ffffff;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  vertical-align: center;
 }
 @media only screen and (min-width: 768px) {
   .main-header {
-    height: 3.75rem;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .main-header {
-    height: 5rem;
+    height: 5.625rem;
   }
 }
 .main-header .wrap {
   height: 100%;
+}
+.main-header .container {
+  height: 50px;
+  padding: 20px 0;
+  box-sizing: content-box;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.main-header .container .main-nav {
+  margin: 15px 5rem 0 0;
 }
 .csspositionsticky .main-header {
   position: -webkit-sticky;
@@ -606,7 +612,7 @@ small {
   vertical-align: middle;
   letter-spacing: 1px;
   list-style: none;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 1rem;
   letter-spacing: normal;
 }
@@ -804,21 +810,17 @@ small {
   opacity: 1;
 }
 .site-title {
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.1;
-  margin: 0;
-  text-transform: capitalize;
   float: left;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  margin: 11px 0 0 5rem;
+  text-transform: capitalize;
 }
 @media only screen and (min-width: 768px) {
   .site-title {
     font-size: 1.5rem;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .site-title {
-    font-size: 2rem;
   }
 }
 .site-title a {
@@ -840,8 +842,28 @@ small {
   color: rgba(255, 255, 255, 0.75);
 }
 .splash-section {
-  height: 100%;
+  height: auto;
+  background: #000000;
   background: linear-gradient(#9575cd, transparent 90%), linear-gradient(0deg, #000000, transparent), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background-size: cover;
+  padding: 150px 0;
+}
+.list-inline li {
+  list-style: none;
+  display: inline-block;
+}
+section {
+  padding: 200px 0;
+}
+#featured-content {
+  padding: 2% 3%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+#featured-video {
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  max-width: 100%;
 }
 .debug {
   color: #F0F !important;

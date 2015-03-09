@@ -1,16 +1,14 @@
 .main-header {
 	.rect(100%, @small-header-height);
-	background-color: @dark-blue;
-	box-shadow: 0 0 1rem fade(@black, 25%);
 	color: @white;
-	position: relative;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	vertical-align: center;
 
 	@media @tablet-up {
 		height: @normal-header-height;
-	}
-
-	@media @desktop {
-		height: @big-header-height;
 	}
 
 	.wrap { // .main-header .wrap
@@ -20,6 +18,13 @@
 
 	.container { // .main-header .container
 		&:extend(._justify all);
+		height: 50px;
+		padding: 20px 0;
+		box-sizing: content-box;
+		font-family: Montserrat, @default-fonts;
+		.main-nav{
+			margin: 15px 5rem 0 0;
+		}
 	}
 
 	.csspositionsticky & { // .csspositionsticky .main-header
