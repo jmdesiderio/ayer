@@ -1,19 +1,24 @@
 .button {
 	&:extend(.box);
-	background-color: @dark-blue;
+	-webkit-appearance: none;
+	background-color: transparent;
 	border-radius: 0.25rem;
-	border: none;
-	color: @white;
+	border: 1px solid @purple;
+	color: @purple;
 	cursor: pointer;
+	font-weight: 400;
 	line-height: 2;
 	margin: 0;
 	padding: 0 1rem; // 0 16px
 	text-align: center;
-	-webkit-appearance: none;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
 
-	&:focus { // .button:focus
+	&:focus, &:hover { // .button:focus
 		box-shadow: none;
 		outline: none;
+		color: @black;
+    	background-color: @purple;
 	}
 
 	&:active { // .button:active
