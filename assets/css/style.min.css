@@ -2678,9 +2678,11 @@ ul {
   opacity: 1;
 }
 .section-heading {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   font-size: 2.5rem;
-  padding: 0 0 4rem;
+  padding: 0 0 2rem;
+  text-transform: uppercase;
 }
 .input.email-input {
   border-radius: 0.25rem;
