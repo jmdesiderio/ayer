@@ -2433,6 +2433,8 @@ ul {
   border-top: 10px solid #515151;
   background-color: #636363;
   color: #969696;
+  height: 120px;
+  padding: 10px 0 0;
 }
 .img-container {
   overflow: hidden;
@@ -2477,6 +2479,41 @@ ul {
 }
 .section {
   padding: 100px 0 300px;
+}
+.music-players {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.music-players .player {
+  margin: 10px 10px;
+}
+.social-icons {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+}
+.social-icons .nav-item {
+  margin: 0px;
+  padding: 15px 15px 15px;
+  background-color: rgba(149, 117, 205, 0.5);
+}
+.social-icons .nav-item .nav-link {
+  color: #ffffff;
+}
+.social-icons .nav-item .nav-link:hover {
+  color: #969696;
 }
 .box,
 .no-flexbox ._vertical-center::before,
@@ -2668,6 +2705,31 @@ ul {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
+.contact-info {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0 0 100px;
+}
+.contact-info .contact-item {
+  padding: 20px 20px;
+}
+.contact-info .contact-item .contact-email {
+  color: #7e57c2;
+}
+.contact-info .contact-item .contact-email:hover {
+  color: #673ab7;
+}
 .site-title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -2705,10 +2767,6 @@ ul {
   background: linear-gradient(#9575cd, transparent 90%), linear-gradient(0deg, #000000, transparent), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
   background-size: cover;
   padding: 150px 0;
-}
-.list-inline li {
-  list-style: none;
-  display: inline-block;
 }
 #featured-content {
   padding: 2% 3%;
