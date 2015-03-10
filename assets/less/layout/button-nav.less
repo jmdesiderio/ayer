@@ -1,0 +1,27 @@
+.button-nav {
+	font-size: @base-font-size;
+	line-height: 1;
+	z-index: 1;
+
+	.nav-item {
+		margin: 30px 15px 0;
+	}
+
+	@media @tablet-up {
+		display: inline-block;
+		text-transform: uppercase;
+		vertical-align: middle;
+		width: 100%;
+
+		.flexbox & { // .flexbox .button-nav
+			flex: 0 0 31rem;
+
+			.nav-list { // .flexbox .button-nav .nav-list
+				align-items: center;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}
+
