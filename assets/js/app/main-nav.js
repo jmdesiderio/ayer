@@ -5,7 +5,6 @@ define([ //dependancies
 
  // variables for the modules
  	var mainNav = $("#js-main-header");
-	var hamburgerButton = $('.js-hamburger-button');
 
 
 	var exports = {

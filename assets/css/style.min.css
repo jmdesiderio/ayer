@@ -2566,6 +2566,29 @@ ul {
 .main-nav-collapse .container .main-nav {
   margin: 15px 5rem 0 0;
 }
+.tab-content {
+  margin: 30px 0 0;
+}
+.tab-content .tab-pane {
+  display: none;
+}
+.tab-content .tab-pane.active {
+  display: block;
+}
+.songkick {
+  background: transparent;
+}
+.songkick.active {
+  background-color: #9575cd;
+  color: #000000;
+}
+.bandsintown {
+  background: transparent;
+}
+.bandsintown.active {
+  background-color: #9575cd;
+  color: #000000;
+}
 .box,
 .no-flexbox ._vertical-center::before,
 .no-flexbox ._vertical-center > .container,

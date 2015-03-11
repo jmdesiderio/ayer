@@ -2,8 +2,9 @@ define([
 	'jquery',
 	'app/toggle-expand',
 	'app/main-nav',
-	'app/scroll'
-	], function($, toggleExpand, mainNav, scroll) {
+	'app/scroll',
+	'app/toggle-live'
+	], function($, toggleExpand, mainNav, scroll, toggleLive) {
 
 	var bodyId = document.body.id;
 
@@ -12,6 +13,7 @@ define([
 
 			mainNav.init();
 			scroll.init();
+			toggleLive.init();
 
 		}
 	};
