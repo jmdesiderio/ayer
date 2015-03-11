@@ -7,6 +7,23 @@
 		margin: 30px 15px 0;
 	}
 
+	.social-icons & {
+		display: inline-block;
+		text-transform: uppercase;
+		vertical-align: middle;
+		width: 100%;
+
+		.flexbox & { // .flexbox .button-nav
+			flex: 0 0 31rem;
+
+			.nav-list { // .flexbox .button-nav .nav-list
+				align-items: center;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+
 	@media @tablet-up {
 		display: inline-block;
 		text-transform: uppercase;

@@ -2433,7 +2433,7 @@ ul {
   border-top: 10px solid #515151;
   background-color: #636363;
   color: #969696;
-  height: 120px;
+  height: 100px;
   padding: 10px 0 0;
 }
 .img-container {
@@ -2452,6 +2452,28 @@ ul {
 }
 .button-nav .nav-item {
   margin: 30px 15px 0;
+}
+.social-icons .button-nav {
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+.flexbox .social-icons .button-nav {
+  -webkit-flex: 0 0 31rem;
+      -ms-flex: 0 0 31rem;
+          flex: 0 0 31rem;
+}
+.flexbox .social-icons .button-nav .nav-list {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media only screen and (min-width: 768px) {
   .button-nav {
@@ -2478,7 +2500,12 @@ ul {
   }
 }
 .section {
-  padding: 100px 0 300px;
+  padding: 100px 0 100px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 100px 0 300px;
+  }
 }
 .music-players {
   list-style: none;
@@ -2690,7 +2717,12 @@ ul {
   line-height: 2;
   width: 400px;
   padding: 0 10px;
-  margin: 0 30px 0 0;
+  margin: 0 0 20px;
+}
+@media only screen and (min-width: 768px) {
+  .input.email-input {
+    margin: 0 30px 0 0;
+  }
 }
 .form-container {
   display: -webkit-flex;
@@ -2737,12 +2769,13 @@ ul {
   font-weight: 700;
   letter-spacing: 3px;
   line-height: 1.1;
-  margin: 11px 0 0 5rem;
+  margin: 11px 0 0 2rem;
   text-transform: capitalize;
 }
 @media only screen and (min-width: 768px) {
   .site-title {
     font-size: 1.5rem;
+    margin: 11px 0 0 5rem;
   }
 }
 .site-title a {
