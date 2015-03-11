@@ -1,16 +1,15 @@
 define([
 	'jquery',
-	'app/toggle-expand'
-	], function($, toggleExpand) {
+	'app/toggle-expand',
+	'app/main-nav',
+	'app/scroll'
+	], function($, toggleExpand, mainNav, scroll) {
 
 	var bodyId = document.body.id;
 
-	toggleExpand.init();
-
 	var exports = {
 		init: function() {
-			console.log("test");
-			return this;
+
 		}
 	};
 
