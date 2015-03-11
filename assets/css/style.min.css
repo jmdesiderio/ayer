@@ -2577,6 +2577,7 @@ ul {
 }
 .songkick {
   background: transparent;
+  width: 200px;
 }
 .songkick.active {
   background-color: #9575cd;
@@ -2584,6 +2585,7 @@ ul {
 }
 .bandsintown {
   background: transparent;
+  width: 200px;
 }
 .bandsintown.active {
   background-color: #9575cd;
