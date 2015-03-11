@@ -10,6 +10,9 @@ define([
 	var exports = {
 		init: function() {
 
+			mainNav.init();
+			scroll.init();
+
 		}
 	};
 

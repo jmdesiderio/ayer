@@ -4,12 +4,13 @@ define([ //dependancies
 
 
  // variables for the modules
- 	var mainNav = $("#js-main-nav");
+ 	var mainNav = $("#js-main-header");
 	var hamburgerButton = $('.js-hamburger-button');
 
 
 	var exports = {
 		init: function() {
+			exports.toggledNavCollapse();
 
 			return this;
 		},
@@ -18,9 +19,9 @@ define([ //dependancies
 
 			$(window).on('scroll', function() {
 				if (mainNav.offset().top > 50) {
-					mainNav.addClass("top-nav-collapse");
+					mainNav.addClass("main-nav-collapse");
 				} else {
-					mainNav.removeClass("top-nav-collapse");
+					mainNav.removeClass("main-nav-collapse");
 				}
 			});
 			
