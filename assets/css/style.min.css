@@ -2524,6 +2524,7 @@ ul {
 }
 .music-players .player {
   margin: 10px 10px;
+  max-width: 90%;
 }
 .social-icons {
   position: fixed;
