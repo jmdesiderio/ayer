@@ -7,6 +7,7 @@
 	z-index: 2;
 	transition: all .6s ease-in-out;
 	transition: background .5s ease-in-out;
+	height: 45%;
 
 	@media @tablet-up {
 		height: @normal-header-height;
@@ -20,12 +21,25 @@
 	.container { // .main-header .container
 		&:extend(._justify all);
 		height: 50px;
-		padding: 20px 0;
-		box-sizing: content-box;
+		padding: 0 0 10px;
 		font-family: Montserrat, @default-fonts;
 		transition: padding .1s ease-in-out;
+		background-color: @black;
+		border-bottom: 2px solid @light-gray;
+
 		.main-nav{
-			margin: 15px 5rem 0 0;
+			margin: 0 5rem 0 0;
+		}
+
+		@media @tablet-up {
+			height: @normal-header-height;
+			padding: 0;
+			background-color: transparent;
+			border: 0;
+
+			.main-nav{
+				margin: 15px 5rem 0 0;
+			}
 		}
 	}
 

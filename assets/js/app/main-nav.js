@@ -1,15 +1,22 @@
 define([ //dependancies
 	'jquery',
-], function($) {
+	'app/effects'
+], function($, effects) {
 
 
 	// variables for the modules
-	var mainNav = $("#js-main-header");
+	var mainNav = $('#js-main-header'),
+		hamburgerBtn = $('#js-hamburger-button'),
+		header = $('#js-main-header');
 
 
 	var exports = {
 		init: function() {
 			exports.toggledNavCollapse();
+
+			hamburgerBtn.on('click', function() {
+				effects.toggleExpand(header);
+			});
 
 			return this;
 		},

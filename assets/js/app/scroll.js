@@ -7,7 +7,8 @@ define([ //dependancies
 
  // variables for the modules
  	var top = $('#js-home-page'),
- 		siteTitle = $('.js-site-title');
+ 		siteTitle = $('.js-site-title'),
+ 		header = $('#js-main-header');
 
 	var exports = {
 		init: function() {
@@ -25,11 +26,12 @@ define([ //dependancies
 		scrollTo: function() {
 			$(function() {
 				$('a.page-scroll').bind('click', function(event) {
+					event.preventDefault();
 					var $anchor = $(this);
 					$('html, body').stop().animate({
 						scrollTop: $($anchor.attr('href')).offset().top
 					}, 1500, 'easeInOutExpo');
-					event.preventDefault();
+					header.removeClass('is-expanded');
 				});
 			});		
 

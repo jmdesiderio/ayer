@@ -355,13 +355,11 @@ td,
 th {
   padding: 0;
 }
-.main-header .container,
-.main-nav-collapse .container {
+.main-header .container {
   line-height: inherit;
   width: 100%;
 }
-.flexbox .main-header .container,
-.flexbox .main-nav-collapse .container {
+.flexbox .main-header .container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -375,13 +373,11 @@ th {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.no-flexbox .main-header .container,
-.no-flexbox .main-nav-collapse .container {
+.no-flexbox .main-header .container {
   font-size: 0.1px;
   text-align: justify;
 }
-.no-flexbox .main-header .container::after,
-.no-flexbox .main-nav-collapse .container::after {
+.no-flexbox .main-header .container::after {
   content: '';
   display: inline-block;
   height: 0;
@@ -2306,6 +2302,7 @@ ul {
   z-index: 2;
   transition: all 0.6s ease-in-out;
   transition: background 0.5s ease-in-out;
+  height: 45%;
 }
 @media only screen and (min-width: 768px) {
   .main-header {
@@ -2317,13 +2314,25 @@ ul {
 }
 .main-header .container {
   height: 50px;
-  padding: 20px 0;
-  box-sizing: content-box;
+  padding: 0 0 10px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: padding 0.1s ease-in-out;
+  background-color: #000000;
+  border-bottom: 2px solid #969696;
 }
 .main-header .container .main-nav {
-  margin: 15px 5rem 0 0;
+  margin: 0 5rem 0 0;
+}
+@media only screen and (min-width: 768px) {
+  .main-header .container {
+    height: 5.625rem;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+  }
+  .main-header .container .main-nav {
+    margin: 15px 5rem 0 0;
+  }
 }
 .csspositionsticky .main-header {
   position: -webkit-sticky;
@@ -2338,7 +2347,50 @@ ul {
 }
 @media only screen and (max-width: 767px) {
   .main-nav {
-    display: none;
+    height: 100%;
+    width: calc(100%);
+    top: 0;
+    position: absolute;
+    left: 0;
+    background: #000000;
+    color: #636363;
+    display: block;
+    z-index: -1;
+    padding: 45px;
+  }
+  .main-nav .nav-list,
+  .main-nav .nav-item {
+    display: block;
+  }
+  .main-nav .nav-list {
+    padding: 0;
+  }
+  .main-nav .nav-item {
+    line-height: 2;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid #636363;
+  }
+  .main-nav .nav-item:nth-of-type(1) {
+    margin: 50px 0 0;
+  }
+  .main-nav .nav-item .icon {
+    margin: 0 1rem 0 0;
+  }
+  .csstransforms .is-expanded .main-nav {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .csstransforms .main-nav {
+    -webkit-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+  .csstransitions .main-nav {
+    transition: -webkit-transform 0.45s ease-in-out;
+    transition: transform 0.45s ease-in-out;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -2552,19 +2604,21 @@ ul {
 .social-icons .nav-item .nav-link:hover {
   color: #969696;
 }
-.main-nav-collapse {
-  background-color: #000;
-  height: 60px;
-  border-bottom: 1px solid #666;
-}
-.main-nav-collapse .container {
-  height: 30px;
-  padding: 10px 0;
-  box-sizing: content-box;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.main-nav-collapse .container .main-nav {
-  margin: 15px 5rem 0 0;
+@media only screen and (min-width: 768px) {
+  .main-nav-collapse {
+    background-color: #000;
+    height: 60px;
+    border-bottom: 1px solid #666;
+  }
+  .main-nav-collapse .container {
+    height: 30px;
+    position: relative;
+    top: 10px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .main-nav-collapse .container .main-nav {
+    margin: 12px 5rem 0 0;
+  }
 }
 .tab-content {
   margin: 30px 0 0;
@@ -2694,6 +2748,10 @@ ul {
   background: rgba(255, 255, 255, 0);
   border: none;
   padding: 0 25px;
+  z-index: 6;
+  position: relative;
+  top: 2px;
+  right: 18px;
 }
 @media only screen and (min-width: 768px) {
   .hamburger-button {
@@ -2826,8 +2884,9 @@ ul {
   font-weight: 700;
   letter-spacing: 3px;
   line-height: 1.1;
-  margin: 11px 0 0 2rem;
+  margin: 11px 0 0 1.5rem;
   text-transform: capitalize;
+  z-index: 6;
 }
 @media only screen and (min-width: 768px) {
   .site-title {
