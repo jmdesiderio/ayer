@@ -9,11 +9,13 @@
 	"paths": {
 		"app": "app",
 		"jquery": "lib/jquery",
-		"jquery.transit": "lib/jquery.transit"
+		"jquery.transit": "lib/jquery.transit",
+		"jquery.easing": "lib/jquery.easing"
 	},
 
 	"shim": {
-		"jquery.transit": ["jquery"]
+		"jquery.transit": ["jquery"],
+		"jquery.easing": ["jquery"]
 	},
 
 	"waitSeconds": 15,

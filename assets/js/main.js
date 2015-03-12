@@ -5,11 +5,13 @@ require.config({
 	paths: {
 		'app': '../app',
 		'jquery': 'jquery',
-		'jquery.transit': 'jquery.transit'
+		'jquery.transit': 'jquery.transit',
+		'jquery.easing': 'jquery.easing'
 	},
 
 	shim: {
-		'jquery.transit': ['jquery']
+		'jquery.transit': ['jquery'],
+		'jquery.easing': ['jquery']
 	},
 
 	waitSeconds: 15

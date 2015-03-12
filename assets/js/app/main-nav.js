@@ -3,8 +3,8 @@ define([ //dependancies
 ], function($) {
 
 
- // variables for the modules
- 	var mainNav = $("#js-main-header");
+	// variables for the modules
+	var mainNav = $("#js-main-header");
 
 
 	var exports = {

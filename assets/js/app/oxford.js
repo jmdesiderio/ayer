@@ -4,7 +4,7 @@ define([
 	'app/main-nav',
 	'app/scroll',
 	'app/toggle-live'
-	], function($, toggleExpand, mainNav, scroll, toggleLive) {
+], function($, toggleExpand, mainNav, scroll, toggleLive) {
 
 	var bodyId = document.body.id;
 

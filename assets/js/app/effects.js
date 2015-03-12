@@ -38,7 +38,7 @@ define(['jquery', 'modernizr'], function($, Modernizr) {
 
 			$('html, body, document').stop().animate({
 				scrollTop: el + offset
-			}, 300, callback);
+			}, 1500, callback);
 
 			return this;
 		},

@@ -4,17 +4,12 @@ define([ //dependancies
 
 
  // variables for the modules
- 	var songKickButton = $('#js-songkick-button');
-	var bandsInTownButton = $('#js-bandsintown-button');
-	var songKickPane = $('#js-songkick');
-	var bandsInTownPane = $('#js-bandsintown');
+	var songKickButton = $('#js-songkick-button'),
+		bandsInTownButton = $('#js-bandsintown-button'),
+		songKickPane = $('#js-songkick'),
+		bandsInTownPane = $('#js-bandsintown');
 
-	function toggleLiveClasses(songKick, bandsInTown) {
-		songKickButton.toggleClass("active", songKick);
-		bandsInTownButton.toggleClass("active", bandsInTown);
-		songKickPane.toggleClass("active", songKick);
-		bandsInTownPane.toggleClass("active", bandsInTown);
-	}
+	
 
 
 	var exports = {
@@ -26,16 +21,25 @@ define([ //dependancies
 
 		toggleLiveShows: function() {
 
-			songKickButton.click(function(event) {
+			songKickButton.on('click', function(event) {
 				event.preventDefault();
-				toggleLiveClasses(true, false);
+				exports.toggleLiveClasses(true, false);
 			});
 
-			bandsInTownButton.click(function(event) {
+			bandsInTownButton.on('click', function(event) {
 				event.preventDefault();
-				toggleLiveClasses(false, true);
+				exports.toggleLiveClasses(false, true);
 			});
 			
+			return this;
+		},
+
+		toggleLiveClasses: function(songKick, bandsInTown) {
+			songKickButton.toggleClass("active", songKick);
+			bandsInTownButton.toggleClass("active", bandsInTown);
+			songKickPane.toggleClass("active", songKick);
+			bandsInTownPane.toggleClass("active", bandsInTown);
+
 			return this;
 		}
 	};
