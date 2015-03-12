@@ -2300,8 +2300,9 @@ ul {
   top: 0;
   vertical-align: center;
   z-index: 2;
-  transition: all 0.6s ease-in-out;
-  transition: background 0.5s ease-in-out;
+  transition: min-height 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.main-header.is-expanded {
   min-height: 310px;
 }
 @media only screen and (min-width: 768px) {
@@ -2317,9 +2318,9 @@ ul {
   height: 50px;
   padding: 0 0 10px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  transition: padding 0.1s ease-in-out;
   background-color: #000000;
   border-bottom: 2px solid #969696;
+  transition: height 0.2s ease-in-out;
 }
 .main-header .container .main-nav {
   margin: 0 5rem 0 0;

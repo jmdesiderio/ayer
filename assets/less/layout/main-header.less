@@ -5,9 +5,12 @@
 	top: 0;
 	vertical-align: center;
 	z-index: 2;
-	transition: all .6s ease-in-out;
-	transition: background .5s ease-in-out;
-	min-height: 310px;
+	transition: min-height .5s ease-in-out,
+				background-color .5s ease-in-out;
+
+	&.is-expanded {
+		min-height: 310px;
+	}
 
 	@media @tablet-up {
 		height: @normal-header-height;
@@ -24,9 +27,9 @@
 		height: 50px;
 		padding: 0 0 10px;
 		font-family: Montserrat, @default-fonts;
-		transition: padding .1s ease-in-out;
 		background-color: @black;
 		border-bottom: 2px solid @light-gray;
+		transition: height .2s ease-in-out;
 
 		.main-nav{
 			margin: 0 5rem 0 0;
