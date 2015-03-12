@@ -2755,6 +2755,9 @@ ul {
   top: 2px;
   right: 18px;
 }
+.hamburger-button .fa-bars {
+  cursor: pointer;
+}
 @media only screen and (min-width: 768px) {
   .hamburger-button {
     display: none;
