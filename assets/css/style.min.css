@@ -2307,6 +2307,7 @@ ul {
 @media only screen and (min-width: 768px) {
   .main-header {
     height: 5.625rem;
+    min-height: 0;
   }
 }
 .main-header .wrap {
