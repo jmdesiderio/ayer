@@ -2920,7 +2920,7 @@ ul {
 .splash-section {
   height: auto;
   background: #000000;
-  background: linear-gradient(#9575cd, transparent 90%), linear-gradient(0deg, #000000, transparent), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: linear-gradient(#7e57c2, transparent 90%), linear-gradient(0deg, #000000, transparent), url(../img/intro-bg.jpg) no-repeat bottom center scroll;
   background-size: cover;
   padding: 150px 0;
 }
