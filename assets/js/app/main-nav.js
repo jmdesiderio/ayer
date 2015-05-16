@@ -7,30 +7,32 @@ define([ //dependancies
 	// variables for the modules
 	var mainNav = $('#js-main-header'),
 		hamburgerBtn = $('#js-hamburger-button'),
-		header = $('#js-main-header');
+		header = $('#js-main-header'),
+		splash = $('#js-splash-section');
 
 
-	var exports = {
-		init: function() {
+	var exports;
+	exports = {
+		init: function () {
 			exports.toggledNavCollapse();
-
-			hamburgerBtn.on('click', function() {
+			splash;
+			hamburgerBtn.on('click', function () {
 				effects.toggleExpand(header);
 			});
 
 			return this;
 		},
 
-		toggledNavCollapse: function() {
+		toggledNavCollapse: function () {
 
-			$(window).on('scroll', function() {
+			$(window).on('scroll', function () {
 				if (mainNav.offset().top > 50) {
 					mainNav.addClass("main-nav-collapse");
 				} else {
 					mainNav.removeClass("main-nav-collapse");
 				}
 			});
-			
+
 			return this;
 		}
 	};
