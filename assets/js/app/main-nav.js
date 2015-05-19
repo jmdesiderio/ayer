@@ -15,7 +15,6 @@ define([ //dependancies
 	exports = {
 		init: function () {
 			exports.toggledNavCollapse();
-			splash;
 			hamburgerBtn.on('click', function () {
 				effects.toggleExpand(header);
 			});

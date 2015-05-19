@@ -5,10 +5,10 @@ define([ //dependancies
 ], function($, effects) {
 
 
- // variables for the modules
- 	var top = $('#js-home-page'),
- 		siteTitle = $('.js-site-title'),
- 		header = $('#js-main-header');
+	// variables for the modules
+	var top = $('#js-home-page'),
+		siteTitle = $('.js-site-title'),
+		header = $('#js-main-header');
 
 	var exports = {
 		init: function() {
