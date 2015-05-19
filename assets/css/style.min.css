@@ -2946,6 +2946,9 @@ ul {
     height: 250px;
   }
 }
+#subscribe {
+  color: #000000;
+}
 .debug {
   color: #F0F !important;
 }
