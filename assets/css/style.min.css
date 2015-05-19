@@ -2946,7 +2946,7 @@ ul {
     height: 250px;
   }
 }
-#subscribe {
+.dark #track-cta a#subscribe {
   color: #000000;
 }
 .debug {
