@@ -2300,7 +2300,7 @@ ul {
   top: 0;
   vertical-align: center;
   z-index: 2;
-  transition: min-height 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: min-height 0.5s ease-in-out, background-color 0.5s ease-in-out, height 0.45s ease-in-out;
 }
 .main-header.is-expanded {
   min-height: 310px;
@@ -2357,8 +2357,13 @@ ul {
     background: #000000;
     color: #636363;
     display: block;
-    z-index: -1;
     padding: 45px;
+    -webkit-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+    transition: -webkit-transform 0.45s ease-in-out;
+    transition: transform 0.45s ease-in-out;
+    z-index: -1;
   }
   .main-nav .nav-list,
   .main-nav .nav-item {
@@ -2380,19 +2385,10 @@ ul {
   .main-nav .nav-item .icon {
     margin: 0 1rem 0 0;
   }
-  .csstransforms .is-expanded .main-nav {
+  .is-expanded .main-nav {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
-  }
-  .csstransforms .main-nav {
-    -webkit-transform: translate(0, -100%);
-        -ms-transform: translate(0, -100%);
-            transform: translate(0, -100%);
-  }
-  .csstransitions .main-nav {
-    transition: -webkit-transform 0.45s ease-in-out;
-    transition: transform 0.45s ease-in-out;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -2610,10 +2606,10 @@ ul {
     border-bottom: 1px solid #666;
   }
   .main-nav-collapse .container {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     height: 30px;
     position: relative;
     top: 10px;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   .main-nav-collapse .container .main-nav {
     margin: 12px 5rem 0 0;
@@ -2858,22 +2854,10 @@ ul {
 }
 .contact-info {
   list-style: none;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   padding: 0 0 100px;
 }
 .contact-info .contact-item {
-  padding: 20px 20px;
+  padding: 20px 10px;
 }
 .contact-info .contact-item .contact-email {
   color: #7e57c2;
@@ -2917,7 +2901,7 @@ ul {
 .splash-section {
   height: 100vh;
   background: #000000;
-  background: linear-gradient(#673ab7, transparent 90%), linear-gradient(0deg, #000000, transparent), url(../img/intro-bg3.jpg) no-repeat bottom center scroll;
+  background: linear-gradient(#90caf9, transparent 90%), linear-gradient(0deg, #000000, transparent), url(../img/intro-bg4.png) no-repeat bottom center scroll;
   background-size: cover;
   padding: 150px 0;
 }

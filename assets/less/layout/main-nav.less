@@ -9,8 +9,10 @@
 		background: @background-color;
 		color: @base-text-color;
 		display: block;
-		z-index: -1;
 		padding: 45px;
+		transform: translate(0, -100%);
+		transition: transform @default-transition;
+		z-index: -1;
 
 		.nav-list,
 		.nav-item {
@@ -38,18 +40,7 @@
 		}
 
 		.is-expanded & {
-
-			.csstransforms & {
-				transform: translate(0, 0);
-			}
-		}
-
-		.csstransforms & {
-			transform: translate(0, -100%);
-		}
-
-		.csstransitions & {
-			transition: transform @default-transition;
+			transform: translate(0, 0);
 		}
 	}
 

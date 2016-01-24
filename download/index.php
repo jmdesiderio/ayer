@@ -1,1 +1,1 @@
-<?php  header( 'Location: https://officialayer.bandcamp.com/yum' ) ;  ?>
+<?php header('Location: https://officialayer.bandcamp.com/yum'); ?>
