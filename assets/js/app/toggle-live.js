@@ -9,8 +9,6 @@ define([ //dependancies
 		songKickPane = $('#js-songkick'),
 		bandsInTownPane = $('#js-bandsintown');
 
-	
-
 
 	var exports = {
 		init: function() {
