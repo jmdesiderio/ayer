@@ -2487,6 +2487,8 @@ ul {
   margin-top: 1em;
 }
 .main-footer {
+  color: #ffffff;
+  font-size: 0.875rem;
   height: 100px;
   padding: 10px 0 0;
 }
@@ -2505,7 +2507,7 @@ ul {
   z-index: 1;
 }
 .button-nav .nav-item {
-  margin: 30px 15px 0;
+  margin: 30px 15px;
 }
 .social-icons .button-nav {
   display: inline-block;
@@ -2629,7 +2631,7 @@ ul {
   width: 200px;
 }
 .songkick.active {
-  background-color: #9575cd;
+  background-color: #ff4081;
   color: #000000;
 }
 .bandsintown {
@@ -2637,7 +2639,7 @@ ul {
   width: 200px;
 }
 .bandsintown.active {
-  background-color: #9575cd;
+  background-color: #ff4081;
   color: #000000;
 }
 .box,
@@ -2661,8 +2663,8 @@ ul {
   -webkit-appearance: none;
   background-color: transparent;
   border-radius: 0.25rem;
-  border: 1px solid #9575cd;
-  color: #9575cd;
+  border: 1px solid #ff4081;
+  color: #ff4081;
   cursor: pointer;
   font-weight: 400;
   line-height: 2;
@@ -2677,7 +2679,7 @@ ul {
   box-shadow: none;
   outline: none;
   color: #000000;
-  background-color: #9575cd;
+  background-color: #ff4081;
 }
 .button:active {
   box-shadow: inset 0 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
@@ -2818,7 +2820,7 @@ ul {
 }
 .input.email-input {
   border-radius: 0.25rem;
-  border: 1px solid #9575cd;
+  border: 1px solid #ff4081;
   line-height: 2;
   width: 100%;
   padding: 0 10px;
@@ -2857,13 +2859,15 @@ ul {
   padding: 0 0 100px;
 }
 .contact-info .contact-item {
+  color: #ffffff;
   padding: 20px 10px;
 }
 .contact-info .contact-item .contact-email {
-  color: #7e57c2;
+  color: #ff4081;
+  transition: color 100ms ease-in-out;
 }
 .contact-info .contact-item .contact-email:hover {
-  color: #673ab7;
+  color: #ff1744;
 }
 .site-title {
   font-size: 1.25rem;
@@ -2901,7 +2905,7 @@ ul {
 .splash-section {
   height: 100vh;
   background: #000000;
-  background: linear-gradient(#90caf9, transparent 90%), linear-gradient(0deg, #000000, transparent), url(../img/intro-bg4.png) no-repeat bottom center scroll;
+  background: linear-gradient(#90caf9, transparent 90%), linear-gradient(0deg, #000000, transparent), url(../img/intro-bg5.jpg) no-repeat bottom center scroll;
   background-size: cover;
   padding: 150px 0;
 }
