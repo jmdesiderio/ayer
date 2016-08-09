@@ -1,0 +1,25 @@
+.section {
+	a {
+		color: black;
+		text-decoration: underline;
+
+		&:hover {
+			color: #263238;
+			text-decoration: none;
+		}
+	}
+}
+
+.side-nav {
+	li {
+		padding: 0;
+	}
+}
+
+.full-width-image {
+	width: 100%;
+}
+
+.social-block {
+	padding: 2rem 0 4rem;
+}

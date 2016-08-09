@@ -1,0 +1,10 @@
+/***************
+    Nav List
+***************/
+.table-of-contents {
+    &.active {
+      font-weight: 500;
+      padding-left: 18px;
+      border-left: 2px solid lighten(color("materialize-red", "base"),10%);
+    }
+}
